@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:dice_box/styled_text.dart';
+
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
 
   @override
-  build(context) {
+  Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -17,13 +19,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: Center(
-        child: Text(
-          'Hello World!',
-          style: TextStyle(
-            color: Colors.blueAccent,
-            fontSize: 24,
-          ),
-        ),
+        child: StyledText(),
       ),
     );
   }
